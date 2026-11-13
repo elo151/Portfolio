@@ -7,12 +7,13 @@
     <title>Portfolio - Acceuil</title>
     <style>
         figure {
-            border: 2px solid white;
+            border: 2px solid rgb(255, 255, 255);
             width: 150px;
+            margin: auto;
         }
 
         img {
-            width: 100%;
+            width: 95%;
         }
 
         section {
@@ -20,6 +21,19 @@
             color: rgb(144, 97, 61);
             background: white;
             border-radius: 10px;
+            margin: 0.50px;
+            padding: 0.50px;
+            background-color: white;
+            border: 2px solid salmon;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px;
+            width: 90%;
+            justify-content: center;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+
         }
 
         #test {
@@ -80,19 +94,99 @@
         }
 
         nav ul li a {
-            border: 2px solid rgb(255, 86, 1);
-            color: rgb(255, 87, 40);
-            background: white;
+            border: 2px solid rgb(252, 150, 138);
+            color: rgb(167, 109, 134);
+            background: rgb(255, 215, 215);
             border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
         }
 
         a {
             border: 2px solid rgb(255, 170, 149);
-            color: rgb(255, 170, 149);
+            color: rgb(144, 97, 61);
             background: white;
             border-radius: 10px;
         }
+
+        nav ul {
+            display: flex;
+            gap: 10px;
+            flex-direction: row;
+            list-style: none;
+
+        }
+
+        nav ul a {
+            margin: 5px;
+            padding: 5px;
+
+
+        }
+
+        main nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            list-style: none;
+            padding: 0;
+            margin: 1px;
+            gap: 10px;
+        }
+
+
+        main section {
+            display: grid;
+            grid-template-areas: "nom" "titulé" "coordo" "form" "experiences" "savoirs-et" "savoirs-fai";
+            border: 2px solid rgb(255, 162, 162);
+            gap: 1px;
+            justify-content: space-around;
+            background-color: white;
+            border: 2px solid salmon;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 0;
+            align-items: center;
+
+        }
+
+        main ul li a {
+            display: grid;
+            grid-area: "nom" "titulé" "coordo" "form" "experiences" "savoirs-et" "savoirs-fai";
+            gap: 1px;
+            border: 2px solid rgb(254, 254, 254);
+
+
+        }
+
+        header nav ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            list-style: none;
+            padding: 20x;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        img {
+            border: 2px solid rgb(255, 170, 149);
+            color: rgb(144, 97, 61);
+            background: white;
+            border-radius: 10px;
+            margin: 0.50px;
+            padding: 0.50px;
+            background-color: white;
+            width: 90%;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
     </style>
+
+
 </head>
 
 
@@ -104,7 +198,8 @@
     <header>
         <h1>Mon portfolio ☾</h1>
         <figure style="border: 2px solid white; width: 150px">
-            <img src="Images/photo_perso.jpg" alt="photo cocker" style="width: 150px" />
+            <img src="Images/photo_perso.jpg" alt="photo cocker" style="width: 145px" />
+
 
 
 
@@ -136,6 +231,7 @@
         </nav>
     </main>
 
+
     <main>
         <section id="Nom">
             <h3>Elodie Playe</h3>
@@ -149,11 +245,14 @@
 
         <section id="Coordo">
             <h3>Coordonnées</h3>
-            24 ans
-            258 rue Dolain, 62100 Calais
-            06.26.35.59.88
-            elodiee879@gmail.com
-            Permis B + Véhicule
+            <ul>
+
+                <li>25 ans</li>
+                <li>258 rue Dolain, 62100 Calais</li>
+                <li>06.26.35.59.88</li>
+                <li>elodiee879@gmail.com</li>
+                <li>Permis B + Véhicule</li>
+            </ul>
         </section>
 
 
@@ -179,6 +278,7 @@
                 <li>Couture</li>
                 <li>Repassage</li>
                 <li>Créations</li>
+
         </section>
 
         <section id="Savoirs-Et">
